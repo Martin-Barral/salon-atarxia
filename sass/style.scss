@@ -1,0 +1,33 @@
+@import "variableGenerales";
+@import "fuentes";
+@import "generales";
+@import "productos";
+@import "equipo";
+@import "media";
+
+      /* declaro las grid areas */
+      nav{
+        grid-area: nav;
+      }
+      .salon{
+        grid-area: salon;
+      }
+      .nosotrossomos{
+        grid-area: nosotrossomos;
+      }
+      .pservicio{
+        grid-area: pservicio;
+      }
+      .imgmarcas{
+        grid-area: imgmarcas;
+      }
+      .newsletter{
+        grid-area: newsletter;
+      }
+      footer{
+        grid-area: footer;
+      }
+      /* empiezo con mi grilla */
+     
+  
+      

@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2? familia= Montserrat:ital,peso@0,200;0,300;1,300 &family= Oswald:wght@200;400 & display=swap");
+* {
+  padding: 0%;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: darkgray;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  min-height: 80vh;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  height: 300px;
+  width: 350px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+}
+
+footer {
+  margin-top: 5px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.productos1 {
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-template-rows: 4fr;
+  justify-items: center;
+}
+
+div {
+  background-color: darkgray;
+}
+
+.equipo {
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 3fr;
+  justify-items: center;
+}
+
+header {
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-areas: "nav" ".salon" ".nosotrossomos" ".pservicio" ".imgmarcas" ".newsletter" "footer";
+}
+
+@media (min-width: 500px) {
+  .salon {
+    display: grid;
+    grid-template-areas: "nav    nav" ".salon    .salon" ".nosotrossomos   .nosotrossomos" ".psservicio       .imgservicio" ".imgmarcas       .imgmarcas" ".newsletter      .newsletter" "footer            footer";
+    grid-template-columns: 1fr 1fr;
+  }
+  .pservicio {
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+  .nosotrossomos {
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+  .ulturnos {
+    list-style-type: none;
+  }
+  .imgproducto {
+    overflow: hidden;
+  }
+  .imgproducto img {
+    transition: all 1.5s;
+  }
+  .imgproducto:hover img {
+    transform: scale(1.5);
+  }
+  .bg {
+    background-color: black;
+  }
+  footer {
+    margin-top: 1.5em;
+  }
+}
+@media (min-width: 768px) {
+  .salon {
+    margin: 0;
+    display: grid;
+    grid-template-areas: "nav      nav     nav" ".salon    .salon   .salon" ".nosotrossomos   .nosotrossomos   .nosotrossomos" ".pservicio       .pservicio      .pservicio" ".imgmarcas       .imgmarcas       .imgmarcas" ".newsletter      .newsletter      .newsletter" "footer            footer           footer";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .tnosotrossomos {
+    background-color: gray;
+  }
+  .nosotrossomos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pservicio {
+    background-color: darkgray;
+    text-align: left;
+  }
+  .ulturnos {
+    list-style-type: none;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    justify-items: center;
+  }
+  .imgmarcas {
+    background-color: gray;
+  }
+  .servicios {
+    background-color: gray;
+  }
+  .cservicios {
+    background-color: gray;
+  }
+  .imgproducto {
+    overflow: hidden;
+  }
+  .imgproducto img {
+    transition: all 1.5s;
+  }
+  .imgproducto:hover img {
+    transform: scale(1.5);
+  }
+  .bg {
+    background-color: black;
+  }
+}
+/* declaro las grid areas */
+nav {
+  grid-area: nav;
+}
+
+.salon {
+  grid-area: salon;
+}
+
+.nosotrossomos {
+  grid-area: nosotrossomos;
+}
+
+.pservicio {
+  grid-area: pservicio;
+}
+
+.imgmarcas {
+  grid-area: imgmarcas;
+}
+
+.newsletter {
+  grid-area: newsletter;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* empiezo con mi grilla *//*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+.productos1 {
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 4fr;
+    justify-items: center;
+  }
+  div{
+    background-color: $color;
+  }

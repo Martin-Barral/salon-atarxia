@@ -1,0 +1,122 @@
+header{
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    ".salon"
+    ".nosotrossomos"
+    ".pservicio"
+    ".imgmarcas"
+    ".newsletter"
+    "footer";
+  }
+
+@media(min-width:500px){
+    .salon{
+      
+      display: grid;
+      grid-template-areas: 
+      "nav    nav"
+      ".salon    .salon"
+      ".nosotrossomos   .nosotrossomos"
+      ".psservicio       .imgservicio"
+      ".imgmarcas       .imgmarcas"
+      ".newsletter      .newsletter"
+      "footer            footer";
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .pservicio{
+      background-color: $color2;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      justify-content: center;
+      text-align:center;}
+     
+      .nosotrossomos{
+      background-color: $color2;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      justify-content: center;
+      text-align: center;
+      }
+      .ulturnos{
+        list-style-type: none;
+      }
+      .imgproducto{
+        overflow: hidden;
+      }
+      .imgproducto img{
+        transition: all 1.5s;
+      }
+      .imgproducto:hover img{
+        transform: scale(1.5);
+      }
+      .bg{
+        background-color: black;
+      }
+      footer{
+        margin-top: 1.5em;
+      }
+  }
+  @media (min-width:768px) {
+    .salon{
+      margin:0;
+      display: grid;
+      grid-template-areas: 
+      "nav      nav     nav"
+      ".salon    .salon   .salon"
+      ".nosotrossomos   .nosotrossomos   .nosotrossomos"
+      ".pservicio       .pservicio      .pservicio"
+      ".imgmarcas       .imgmarcas       .imgmarcas"
+      ".newsletter      .newsletter      .newsletter"
+      "footer            footer           footer";
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+      .tnosotrossomos{
+        background-color: $color2;
+      }
+      .nosotrossomos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .pservicio{
+      background-color: $color;
+      text-align: left;
+      }
+      .ulturnos{
+        list-style-type: none;
+      }
+      .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-between;
+        justify-items: center;
+       } 
+       .imgmarcas{
+        background-color: $color2;
+       }
+       .servicios{
+        background-color: $color2;
+        }
+        .cservicios{
+        background-color: $color2;
+        }
+        .imgproducto{
+          overflow: hidden;
+        }
+        .imgproducto img{
+          transition: all 1.5s;
+        }
+        .imgproducto:hover img{
+          transform: scale(1.5);
+        }
+        .bg{
+          background-color: black;
+        }
+       }
