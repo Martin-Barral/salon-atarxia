@@ -22,8 +22,8 @@ a {
 }
 
 img {
-  height: 300px;
-  width: 350px;
+  height: 200px;
+  width: 250px;
   border-style: solid;
   border-radius: 5px;
   border-color: black;
@@ -68,6 +68,13 @@ header {
     grid-template-areas: "nav    nav" ".salon    .salon" ".nosotrossomos   .nosotrossomos" ".psservicio       .imgservicio" ".imgmarcas       .imgmarcas" ".newsletter      .newsletter" "footer            footer";
     grid-template-columns: 1fr 1fr;
   }
+  img {
+    height: 250px;
+    width: 200px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+  }
   .pservicio {
     background-color: gray;
     display: grid;
@@ -110,6 +117,13 @@ header {
     grid-template-areas: "nav      nav     nav" ".salon    .salon   .salon" ".nosotrossomos   .nosotrossomos   .nosotrossomos" ".pservicio       .pservicio      .pservicio" ".imgmarcas       .imgmarcas       .imgmarcas" ".newsletter      .newsletter      .newsletter" "footer            footer           footer";
     grid-template-columns: 1fr 1fr 1fr;
   }
+  img {
+    height: 450px;
+    width: 400px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+  }
   .tnosotrossomos {
     background-color: gray;
   }
@@ -118,11 +132,20 @@ header {
     justify-content: center;
     align-items: center;
   }
+  .equipo {
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 3fr;
+    justify-content: space-around;
+    justify-items: center;
+  }
   .pservicio {
     background-color: darkgray;
     text-align: left;
   }
   .ulturnos {
+    background-color: gray;
     list-style-type: none;
   }
   .container {

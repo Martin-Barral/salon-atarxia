@@ -25,6 +25,12 @@ header{
       "footer            footer";
       grid-template-columns: 1fr 1fr;
     }
+    img {
+        @include sizes (200px,250px);
+        border-style: solid;
+        border-radius: 5px;
+        border-color: black;
+      }
     
     .pservicio{
       background-color: $color2;
@@ -76,6 +82,13 @@ header{
       grid-template-columns: 1fr 1fr 1fr;
     }
     
+    img {
+        @include sizes (400px,450px);
+        border-style: solid;
+        border-radius: 5px;
+        border-color: black;
+         }
+    
       .tnosotrossomos{
         background-color: $color2;
       }
@@ -84,11 +97,20 @@ header{
         justify-content: center;
         align-items: center;
       }
+      .equipo {
+        background-color: $color2;
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: 3fr;
+        justify-content: space-around;
+        justify-items:center;
+      }
       .pservicio{
       background-color: $color;
       text-align: left;
       }
       .ulturnos{
+        background-color: $color2;
         list-style-type: none;
       }
       .container{

@@ -6,6 +6,7 @@
   html {
     font-size: 62.5%;
   }
+ 
   
   body {
     background-color: $color;
@@ -19,12 +20,13 @@
     text-decoration: none;
   }
   img {
-    height: 300px;
-    width: 350px;
+    height: 200px;
+    width: 250px;
     border-style: solid;
     border-radius: 5px;
     border-color: black;
   }
+  
   footer {
     margin-top: 5px;
     background-color: black;

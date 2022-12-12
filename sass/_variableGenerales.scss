@@ -1,2 +1,7 @@
 $color: darkgray;
 $color2:gray;
+
+@mixin sizes ($width, $height){
+ height: $height;
+ width: $width;   
+}
