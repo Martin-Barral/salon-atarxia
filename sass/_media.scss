@@ -26,18 +26,25 @@ header{
       grid-template-columns: 1fr 1fr;
     }
     img {
-        @include sizes (200px,250px);
+        @include sizes (300px,350px);
         border-style: solid;
         border-radius: 5px;
         border-color: black;
       }
+      .salon{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+      }
     
     .pservicio{
-      background-color: $color2;
+      background-color: $color;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
       justify-content: center;
+      justify-items: center;
       text-align:center;}
      
       .nosotrossomos{
@@ -46,6 +53,7 @@ header{
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
       justify-content: center;
+      justify-items: center;
       text-align: center;
       }
       .ulturnos{
@@ -83,12 +91,17 @@ header{
     }
     
     img {
-        @include sizes (400px,450px);
+        @include sizes (300px,350px);
         border-style: solid;
         border-radius: 5px;
         border-color: black;
          }
-    
+         .salon{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          text-align: center;
+        }
       .tnosotrossomos{
         background-color: $color2;
       }

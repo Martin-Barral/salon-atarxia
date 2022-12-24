@@ -6,6 +6,13 @@
   html {
     font-size: 62.5%;
   }
+  img {
+    height: 200px;
+    width: 250px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+  }
  
   
   body {
@@ -19,14 +26,6 @@
     color: white;
     text-decoration: none;
   }
-  img {
-    height: 200px;
-    width: 250px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: black;
-  }
-  
   footer {
     margin-top: 5px;
     background-color: black;
